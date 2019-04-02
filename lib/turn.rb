@@ -10,6 +10,10 @@ end
 
 display_board(board)
 
+def input_to_index(user_input)
+  user_input.to_i - 1
+end 
+
 def valid_move?(board, index)
 
    if index.between?(0,8) == true && position_taken?(board, index) == false
