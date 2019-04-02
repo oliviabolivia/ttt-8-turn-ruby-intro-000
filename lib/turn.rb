@@ -12,7 +12,11 @@ display_board(board)
 
 def input_to_index(user_input)
   user_input.to_i - 1
-end 
+end
+
+def move(array, index, player = 'X')
+  array[index] = player
+end
 
 def valid_move?(board, index)
 
