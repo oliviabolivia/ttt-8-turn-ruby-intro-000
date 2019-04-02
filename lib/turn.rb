@@ -28,5 +28,5 @@ def position_taken?(board, index)
     taken = false
   else
     take = true
-  end 
+  end
 end
