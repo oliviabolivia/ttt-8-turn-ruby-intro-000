@@ -34,7 +34,7 @@ def turn(board)
   else
     turn(board, input)
   end
-  display_board
+  display_board(board)
 end
 
 def position_taken?(board, index)
