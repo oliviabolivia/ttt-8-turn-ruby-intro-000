@@ -14,9 +14,6 @@ def input_to_index(user_input)
   user_input.to_i - 1
 end
 
-def move(array, index, player = 'X')
-  array[index] = player
-end
 
 def valid_move?(board, index)
 
@@ -26,8 +23,6 @@ def valid_move?(board, index)
     return false
   end
 end
-
-
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -41,3 +36,18 @@ def turn(board)
   end
   display_board
 end
+
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    taken = false
+  else
+    take = true
+  end
+end
+
+def move(array, index, player = 'X')
+  array[index] = player
+end
+
+
+
