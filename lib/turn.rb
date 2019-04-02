@@ -48,6 +48,3 @@ end
 def move(array, index, player = 'X')
   array[index] = player
 end
-
-
-
